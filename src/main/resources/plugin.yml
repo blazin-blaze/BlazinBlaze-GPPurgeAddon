@@ -3,7 +3,7 @@ version: '1.0'
 main: net.blazinblaze.gpaddons.gppurgeaddon.GPPurgeAddon
 api-version: '1.21'
 authors: [ BlazinBlaze ]
-description: Allows an admin to temporarily disable all claims for a "purge" event.
+description: Allows an admin to temporarily disable all GriefPrevention claims for a "purge" event.
 depend:
   - GriefPrevention
 commands:

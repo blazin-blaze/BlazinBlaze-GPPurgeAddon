@@ -36,7 +36,7 @@ public class TogglePurgeCommand implements CommandExecutor {
                     for(int i = 0; i < list.size(); i++) {
                         Player plr = list.get(i);
                         GriefPrevention.instance.dataStore.getPlayerData(plr.getUniqueId()).ignoreClaims = true;
-                        plr.sendTitle("§cTHE PURGE HAS BEGUN.", "§4Protect your claims!", 10, 100, 20);
+                        plr.sendTitle("§c§lTHE PURGE HAS BEGUN.", "§4Protect your claims!", 10, 100, 20);
                         plr.playSound(plr.getLocation(), Sound.ENTITY_WITHER_DEATH, 10.0F, 1.0F);
                     }
                     sender.sendMessage("§c§l Purge activated!");

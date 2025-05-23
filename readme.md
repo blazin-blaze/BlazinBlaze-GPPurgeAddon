@@ -1,6 +1,6 @@
 # GPPurgeAddon
 
-A Spigot plugin that adds commands that allow a player with OP to start a purge, which ignores all claims globally and allows for chaos!
+A Spigot plugin that adds commands that allow a player with OP to start a purge, which ignores all GriefPrevention claims globally and allows for chaos!
 
 `/claimpurgetoggle` - Toggles a purge to be activated or deactivated. Will be activated or deactivated permanently until the command is ran again. Cannot be run when `/claimpurgetimed` is active.
 
