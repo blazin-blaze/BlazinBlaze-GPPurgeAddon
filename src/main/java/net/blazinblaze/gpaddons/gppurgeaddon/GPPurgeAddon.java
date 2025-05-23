@@ -26,7 +26,7 @@ public class GPPurgeAddon extends JavaPlugin
             GriefPrevention.instance.dataStore.getPlayerData(plr.getUniqueId()).ignoreClaims = false;
         }
         getCommand("claimpurgetoggle").setExecutor(new TogglePurgeCommand());
-        getCommand("claimpurgetimed").setExecutor(new TogglePurgeCommand());
+        getCommand("claimpurgetimed").setExecutor(new TimedPurgeCommand());
     }
 
     @Override

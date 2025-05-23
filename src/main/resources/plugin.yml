@@ -12,7 +12,7 @@ commands:
       usage: /<command>
       permission: gppurgeaddon.claimpurges
       permission-message: You are not allowed to run this command.
-  claimtimedpurge:
+  claimpurgetimed:
       description: Creates a server-wide purge for a set amount of seconds
       usage: /<command>
       permission: gppurgeaddon.claimpurges
