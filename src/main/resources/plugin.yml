@@ -7,12 +7,17 @@ description: Allows an admin to temporarily disable all claims for a "purge" eve
 depend:
   - GriefPrevention
 commands:
-  toggleclaimpurge:
+  claimpurgetoggle:
       description: Toggles whether a server-wide purge is active or not
       usage: /<command>
-      permission: gppurgeaddon.toggleclaimpurge
+      permission: gppurgeaddon.claimpurges
+      permission-message: You are not allowed to run this command.
+  claimtimedpurge:
+      description: Creates a server-wide purge for a set amount of seconds
+      usage: /<command>
+      permission: gppurgeaddon.claimpurges
       permission-message: You are not allowed to run this command.
 permissions:
-    gppurgeaddon.toggleclaimpurge:
+    gppurgeaddon.claimpurges:
         description: Allows a player to run the togglepurge command
         default: op

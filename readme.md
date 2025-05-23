@@ -1,24 +1,9 @@
-## GenericAddon
+# GPPurgeAddon
 
-A generic GriefPrevention addon project.
-Includes GriefPrevention's default editor style settings, Dependabot/Appveyor configurations, release-drafter workflow,
-and workflows to automatically merge Dependabot submissions that pass checks.
+A Spigot plugin that adds commands that allow a player with OP to start a purge, which ignores all claims globally and allows for chaos!
 
-## Usage
-* Edit `./scripts/setup.properties`
-* Run script for your system.
-* Delete `./scripts/`
+`/claimpurgetoggle` - Toggles a purge to be activated or deactivated. Will be activated or deactivated permanently until the command is ran again. Cannot be run when `/claimpurgetimed` is active.
 
-## Installation
-### Automatic
-Click [here](https://github.com/GPAddons/GenericAddon/generate) to clone this template.
+`/claimpurgetimed` - Allows you to start a purge for a set amount of seconds. Default is `60`. Cannot be run when a purge is active with `/claimpurgetoggle`.
 
-### Manual installation
-* Download source or clone
-  * If cloned, delete git data
-* Set up new project
-
-### IntelliJ
-* Follow normal installation steps
-* [Create template project](https://www.jetbrains.com/help/idea/saving-project-as-template.html)
-* Use template for future addons
+Make sure to have the `GriefPrevention` plugin installed, or else it will not work! - https://github.com/GriefPrevention/GriefPrevention/
