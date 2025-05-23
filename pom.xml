@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.gpaddons</groupId>
-    <artifactId>genericartifact</artifactId>
+    <artifactId>gppurgeaddon</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>GenericAddon</name>
-    <description>GenericDescription</description>
+    <name>GPPurgeAddon</name>
+    <description>Allows an admin to temporarily disable all claims for a purge event.</description>
 
     <developers>
         <developer>
-            <name>GenericAuthor</name>
+            <name>BlazinBlaze</name>
         </developer>
     </developers>
 
@@ -80,4 +80,5 @@
     </build>
 
 </project>
+
 

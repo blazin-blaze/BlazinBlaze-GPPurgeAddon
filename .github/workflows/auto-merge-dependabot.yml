@@ -7,9 +7,9 @@ on:
 
 jobs:
   automerge-dependabot-pr:
-    if: "github.actor == 'dependabot[bot]'
-      && github.event.workflow_run.event == 'pull_request'
-      && github.event.workflow_run.conclusion == 'success'"
-    uses: Jikoo/PlanarActions/.github/workflows/pr_automerge_complete.yml@master
+    if: "blazinblaze.actor == 'dependabot[bot]'
+      && blazinblaze.event.workflow_run.event == 'pull_request'
+      && blazinblaze.event.workflow_run.conclusion == 'success'"
+    uses: Jikoo/PlanarActions/.blazinblaze/workflows/pr_automerge_complete.yml@master
     with:
-      triggering-workflow-run: ${{ github.event.workflow_run.id }}
+      triggering-workflow-run: ${{ blazinblaze.event.workflow_run.id }}

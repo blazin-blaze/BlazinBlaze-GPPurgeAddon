@@ -1,8 +1,18 @@
-name: "${project.name}"
-main: "${project.groupId}.${project.artifactId}.${project.name}"
-version: "${project.version}"
-api-version: "${project.api-version}"
-author: "${project.developers[0].name}"
-description: "${project.description}"
+name: GPPurgeAddon
+version: '1.0'
+main: net.blazinblaze.gpaddons.gppurgeaddon.GPPurgeAddon
+api-version: '1.21'
+authors: [ BlazinBlaze ]
+description: Allows an admin to temporarily disable all claims for a "purge" event.
 depend:
   - GriefPrevention
+commands:
+  toggleclaimpurge:
+      description: Toggles whether a server-wide purge is active or not
+      usage: /<command>
+      permission: gppurgeaddon.toggleclaimpurge
+      permission-message: You are not allowed to run this command.
+permissions:
+    gppurgeaddon.toggleclaimpurge:
+        description: Allows a player to run the togglepurge command
+        default: op
