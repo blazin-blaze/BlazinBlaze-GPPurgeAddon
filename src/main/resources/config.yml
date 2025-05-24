@@ -1,0 +1,2 @@
+#Toggle whether permissions should be reset after a purge. Default is true, as it prevents malicious claims made during the purge from remaining after the purge.
+should-reset-perms: true
